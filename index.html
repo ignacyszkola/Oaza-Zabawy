@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Generator zabaw</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; }
+  select, input { margin: 5px; }
+  button { margin: 10px 0; padding: 5px 10px; }
+</style>
+</head>
+<body>
+
+<h2>Generator zabaw</h2>
+
+<label>Grupa:</label>
+<select id="groupSelect">
+  <option value="OBD">OBD</option>
+  <option value="OND">OND</option>
+  <option value="ONZ">ONŻ</option>
+</select>
+
+<label>Ilość minut:</label>
+<input type="number" id="minutesInput" value="60" min="5">
+
+<button id="generateBtn">Losuj zabawy</button>
+
+<h3>Wylosowane zabawy:</h3>
+<ul id="resultList"></ul>
+
+<script src="Js/data.js"></script>
+<script src="Js/main.js"></script>
+</body>
+</html>
